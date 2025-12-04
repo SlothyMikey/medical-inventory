@@ -1,0 +1,18 @@
+.dashboard-container {
+    padding: 2rem;
+    text-align: center;
+}
+
+.btn-logout {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: var(--primary-600);
+    color: white;
+    text-decoration: none;
+    border-radius: var(--radius);
+}
+
+.btn-logout:hover {
+    background-color: var(--primary-700);
+}

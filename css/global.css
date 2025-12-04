@@ -1,0 +1,122 @@
+:root {
+    /* Blue Color Palette */
+    --primary-50: #eff6ff;
+    --primary-100: #dbeafe;
+    --primary-200: #bfdbfe;
+    --primary-300: #93c5fd;
+    --primary-400: #60a5fa;
+    --primary-500: #3b82f6;
+    /* Main Brand Color */
+    --primary-600: #2563eb;
+    --primary-700: #1d4ed8;
+    --primary-800: #1e40af;
+    --primary-900: #1e3a8a;
+
+    --neutral-50: #f8fafc;
+    --neutral-100: #f1f5f9;
+    --neutral-200: #e2e8f0;
+    --neutral-300: #cbd5e1;
+    --neutral-400: #94a3b8;
+    --neutral-500: #64748b;
+    --neutral-600: #475569;
+    --neutral-700: #334155;
+    --neutral-800: #1e293b;
+    --neutral-900: #0f172a;
+
+    --font-family: 'Inter', sans-serif;
+    --radius: 12px;
+    --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+    --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+    --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-family);
+    background-color: var(--neutral-50);
+    color: var(--neutral-900);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 1rem;
+    /* Add padding for small screens */
+}
+
+/* Grid Background */
+.grid-background {
+    position: fixed;
+    /* Fixed to cover viewport during scroll */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image:
+        linear-gradient(var(--primary-100) 1px, transparent 1px),
+        linear-gradient(90deg, var(--primary-100) 1px, transparent 1px);
+    background-size: 40px 40px;
+    background-position: center center;
+    z-index: -2;
+    mask-image: radial-gradient(circle at center, black 40%, transparent 100%);
+    -webkit-mask-image: radial-gradient(circle at center, black 40%, transparent 100%);
+    opacity: 0.6;
+}
+
+/* Form Elements */
+.form-group {
+    margin-bottom: 1.25rem;
+}
+
+.form-group label {
+    display: block;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: var(--neutral-700);
+    margin-bottom: 0.5rem;
+}
+
+.input-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.input-wrapper input {
+    width: 100%;
+    padding: 0.75rem 1rem 0.75rem 2.5rem;
+    /* Left padding for icon */
+    border: 1px solid var(--neutral-300);
+    border-radius: var(--radius);
+    font-size: 0.95rem;
+    color: var(--neutral-900);
+    background-color: white;
+    transition: all 0.2s ease;
+    appearance: none;
+    /* Remove default arrow */
+    -webkit-appearance: none;
+}
+
+.input-wrapper input:focus {
+    outline: none;
+    border-color: var(--primary-500);
+    box-shadow: 0 0 0 3px var(--primary-100);
+}
+
+.input-icon {
+    position: absolute;
+    left: 1rem;
+    color: var(--neutral-400);
+    pointer-events: none;
+    transition: color 0.2s ease;
+    font-size: 1rem;
+}
+
+.input-wrapper input:focus+.input-icon {
+    color: var(--primary-500);
+}
