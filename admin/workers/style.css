@@ -1,0 +1,108 @@
+/* Workers Management Styles */
+
+/* Page Header */
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+/* Card Header */
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-header h3 {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--neutral-700);
+}
+
+.card-header h3 i {
+    color: #f97316;
+}
+
+/* Note: Workers use headset icon (fa-headset) */
+
+/* Table Responsive */
+.table-responsive {
+    overflow-x: auto;
+    padding: 0;
+}
+
+/* User Cell */
+.user-cell {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.user-avatar-sm {
+    width: 36px;
+    height: 36px;
+    background: linear-gradient(135deg, #ffedd5, #fed7aa);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ea580c;
+    font-size: 0.875rem;
+}
+
+/* Delete Form */
+.delete-form {
+    display: inline;
+}
+
+/* Form Row */
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+@media (max-width: 480px) {
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Required Indicator */
+.required {
+    color: #ef4444;
+}
+
+/* Empty State Icon Color */
+.empty-state i {
+    color: #f97316;
+}
+
+/* Badge Warning Override for Workers */
+.badge-warning {
+    background: #ffedd5;
+    color: #c2410c;
+}
+
+/* Table Actions */
+.table td:last-child {
+    text-align: center;
+}
+
+/* Responsive Header */
+@media (max-width: 640px) {
+    .header-content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .header-content .btn {
+        width: 100%;
+    }
+}

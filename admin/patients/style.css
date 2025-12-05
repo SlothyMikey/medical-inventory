@@ -1,0 +1,68 @@
+/* Patients Page Styles */
+
+.coming-soon-card {
+    background: white;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-lg);
+    border: 1px solid var(--neutral-200);
+    padding: 3rem;
+    text-align: center;
+    max-width: 600px;
+    margin: 2rem auto;
+}
+
+.coming-soon-icon {
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(135deg, var(--primary-100), var(--primary-200));
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5rem;
+}
+
+.coming-soon-icon i {
+    font-size: 2.5rem;
+    color: var(--primary-600);
+}
+
+.coming-soon-card h2 {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: var(--neutral-900);
+    margin-bottom: 0.75rem;
+}
+
+.coming-soon-card>p {
+    color: var(--neutral-500);
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.coming-soon-features {
+    font-weight: 600;
+    color: var(--neutral-700);
+    margin-bottom: 1rem;
+}
+
+.feature-list {
+    list-style: none;
+    text-align: left;
+    max-width: 320px;
+    margin: 0 auto 2rem;
+}
+
+.feature-list li {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.5rem 0;
+    color: var(--neutral-600);
+    font-size: 0.95rem;
+}
+
+.feature-list li i {
+    color: var(--primary-500);
+    font-size: 0.875rem;
+}
